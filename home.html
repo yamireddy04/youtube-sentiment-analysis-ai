@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="{{url_for('home')}}" style="color: yellow;">Home</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{url_for('comment')}}" style="color: white; padding-left: 30px;">Comment Analysis</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{{url_for('video')}}" style="color: white; padding-left: 30px;">Video Analysis</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{url_for('index')}}" style="color: white; padding-left: 30px;">Logout</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <div class="banner_section layout_padding" style="display: flex; align-items: center; justify-content: center; height: 100vh; background-color: rgba(0, 0, 0, 0.655);">
+        <div class="container" style="margin-top: -100px;">
+            <div id="banner_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="banner_taital_main text-center" style="margin-top: -110px;">
+                            
+                            <h1 class="banner_taital" style="color: white;">WELCOME!</h1>
+                            <h5 class="tasty_text">Sentiment Analysis for YouTube Comment using AI</h5>
+                            <p class="banner_text" style="color: white;">
+                                "Unlocking the Power of YouTube Comments: Harnessing AI to Understand Sentiment, Engage Audiences, and Drive Insights!"
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

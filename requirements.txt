@@ -1,0 +1,12 @@
+> Python 3.10.8
+
+Flask
+mysql-connector-python
+youtube_transcript_api
+nltk== 3.9.1
+google-api-python-client==2.161.0
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.2.2
+tensorflow==2.15.0
+keras==2.15.0
